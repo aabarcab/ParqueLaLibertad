@@ -1,0 +1,169 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,400italic'>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Parque La Libertad</title>
+    <style type="text/css">
+        .auto-style5 {
+            position: relative;
+            margin-top: 80px;
+            left: 5px;
+            top: 0px;
+        }
+        .auto-style6 {
+            position: relative;
+            float: left;
+            width: 93%;
+            color: #000;
+            text-align: left;
+            right: 25px;
+            top: -25px;
+            left: -25px;
+            text-shadow: none;
+            height: 403px;
+            overflow-y: auto;
+            padding-right: 25px;
+        }
+        .auto-style9 {
+            width: 173px;
+            height: 56px;
+        }
+        .auto-style10 {
+            width: 186px;
+            height: 56px;
+        }
+        .auto-style11 {
+            height: 56px;
+        }
+        .auto-style12 {
+            width: 100%;
+            height: 58px;
+        }
+        .auto-style13 {
+            left: -5px;
+            top: 0px;
+            height: 613px;
+        }
+        .auto-style14 {
+            background-size: cover;
+            min-height: 500px;
+            overflow-y: auto;
+            height: 406px;
+            border-top: 7px solid #10a5cd;
+            padding: 20px;
+            background-color: white;
+            background-image: url('images/banner-bg-home.jpg');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+        <!--<div class="container">					
+			 Logo -->
+				<!--<h1><a href="#" id="logo">Parque</a></h1>
+
+			<!-- Nav 
+				<nav id="nav">-->
+					<ul class="nav">
+                        <li><a href="index.aspx">INICIO</a></li>
+                        <li><a href="">PERSONAS</a>
+                            <ul>
+							    <li><a href="agregarPersona.aspx">Agregar/Modificar</a></li>
+							    <li><a href="#">Consultar</a></li>
+						    </ul>
+                        </li>
+                        <li><a href="user.aspx">USUARIO</a></li>
+						<li><a href:"">CURSOS</a>
+                            <ul>
+							    <li><a href="agregarCurso.aspx">Agregar/Modificar</a></li>
+							    <li><a href="consultarCurso.aspx">Consultar</a></li>
+							    <li><a href="#">Matricular</a></li>
+                                <li><a href="#">Desertar</a></li>
+						    </ul>
+                        </li>
+						<li><a href="actividades.aspx">ACTIVIDADES</a></li>
+						<li><a href="eventos.aspx">EVENTOS</a></li>
+						<li><a href="contacto.aspx">CONTACTO</a></li>
+					</ul>
+				</nav>
+	</div>
+    <div class="main-body">	
+        <div class="container">
+            <div class="row">               
+                <div class="auto-style5">
+                    <div class="content-main">
+                        <div class="row margin-b-30" style="height: 547px">
+                            <div class="auto-style13">
+                                <div class="auto-style14">                                
+                                    <div class="auto-style6">
+                                        <div class="heading">
+                                            <h1>Consultar Actividades</h1>
+                                        </div>
+                                        <div class="desc">        
+                                            <table class="auto-style12">
+                                                <tr>
+                                                    <td class="auto-style9">&nbsp;Fecha de busqueda</td>
+                                                    <td class="auto-style10">
+                                                        <select id="Select1" name="D1">
+                                                            <option></option>
+                                                        </select></td>
+                                                    <td class="auto-style11"><div class="desc">
+                                            <button type="button"class="">Aceptar</button>
+                                            
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <button type="button"class="">Demandados</button>
+                                            
+                                        </div></td>
+                                                  
+                                                  
+                                                </tr>
+                                                </table>
+                                            <br />
+                                        <br />
+              
+                                            <asp:ListBox ID="ListBox1" runat="server" Height="143px" Width="353px"></asp:ListBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <asp:ListBox ID="ListBox2" runat="server" Height="143px" Width="335px"></asp:ListBox>
+              
+                                        </div>
+                                        
+                                        <br />
+                                        <br />
+                                        
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div> <!-- .content-main -->
+                </div> <!-- .main-page -->
+            </div> <!-- .row -->
+                      
+            <footer class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+                    <p class="copyright">Copyright © 2016 Company Name 
+                    
+                    | Design: <a rel="nofollow" href="http://www.templatemo.com" target="_parent">template mo</a></p>
+                </div>    
+            </footer>  <!-- .row -->      
+        </div> <!-- .container -->
+    </div> <!-- .main-body -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    </form>
+
+</body>
+</html>
